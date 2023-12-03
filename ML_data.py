@@ -5,8 +5,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 def connect_to_database():
-    # Replace the connection string with your database details
-    connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=localhost,1433;DATABASE=rocketerDB;UID=SA;PWD=Sha_@2030'
+   connection_string = 'DRIVER=DRIVER;SERVER=SERVER;DATABASE=DATABASE;UID=UID;PWD=PWD'
 
     try:
         connection = pyodbc.connect(connection_string)
@@ -24,7 +23,6 @@ def fetch_data():
 
     cursor = connection.cursor()
 
-    # Make sure the query selects the 'Interests' and 'Experience' columns
     query = '''
     SELECT UserID, Name, Email, Phone, UserType, Interests, Experience
     FROM Users
