@@ -1,8 +1,7 @@
 import pyodbc
 
 def connect_to_database():
-    # Replace the connection string with your database details
-    connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=localhost,1433;DATABASE=rocketerDB;UID=SA;PWD=Sha_@2030'
+    connection_string = 'DRIVER=DRIVER;SERVER=SERVER;DATABASE=DATABASE;UID=UID;PWD=PWD'
 
     try:
         connection = pyodbc.connect(connection_string)
@@ -41,8 +40,6 @@ if result is not None:
         print("User data:", row)
 else:
     print("No user data found in the table.")
-    
-   ############################################# 
     
 def fetch_mentor_data():
     connection = connect_to_database()
