@@ -7,7 +7,6 @@ This repository contains an ML algorithm that matches users with suitable mentor
 - **Matching Algorithm**: The ML algorithm compares user profiles (interests, experience) with mentor profiles (name, experience, and interests) to determine the suitability of mentors for users.
 - **Docker Integration**: The project is containerized using Docker, ensuring easy deployment and scalability.
 - **DBeaver Database Connectivity**: The algorithm connects to a database through DBeaver, allowing seamless integration with mentor and user data.
-- **Prioritized Mentor List "Soon"**: The algorithm provides an ordered list of mentors, starting from the most suitable to the least suitable, to guide users effectively.
 
 ## Getting Started
 
