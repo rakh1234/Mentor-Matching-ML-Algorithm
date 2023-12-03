@@ -19,7 +19,7 @@ This repository contains an ML algorithm that matches users with suitable mentor
 ### Installation
 
 1. Clone the repository:
-   git clone https://github.com/rakh1234/mentor-matching.git
+   git clone [https://github.com/rakh1234/mentor-matching.git](https://github.com/rakh1234/Mentor-Matching-ML-Algorithm)
 2. Set up the Docker container:
    docker build -t mentor-matching .
    docker run -d -p 5000:5000 mentor-matching
