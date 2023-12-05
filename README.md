@@ -23,5 +23,4 @@ This repository contains an ML algorithm that matches users with suitable mentor
    docker build -t mentor-matching .
    docker run -d -p 5000:5000 mentor-matching
 3. Configure the database connection in DBeaver using the provided credentials.
-4. Run the algorithm:
-   python mentor_matching.py
+4. Run the algorithm.
