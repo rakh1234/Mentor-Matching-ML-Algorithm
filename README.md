@@ -7,6 +7,7 @@ This repository contains an ML algorithm that matches users with suitable mentor
 - **Matching Algorithm**: The ML algorithm compares user profiles (interests, experience) with mentor profiles (name, experience, and interests) to determine the suitability of mentors for users.
 - **Docker Integration**: The project is containerized using Docker, ensuring easy deployment and scalability.
 - **DBeaver Database Connectivity**: The algorithm connects to a database through DBeaver, allowing seamless integration with mentor and user data.
+- **Prioritized Mentor List**: An ordered list of mentors, starting from the most suitable to the least suitable.
 
 ## Getting Started
 
@@ -18,9 +19,10 @@ This repository contains an ML algorithm that matches users with suitable mentor
 ### Installation
 
 1. Clone the repository:
-   git clone [https://github.com/rakh1234/mentor-matching.git](https://github.com/rakh1234/Mentor-Matching-ML-Algorithm)
-2. Set up the Docker container:
-   docker build -t mentor-matching .
-   docker run -d -p 5000:5000 mentor-matching
-3. Configure the database connection in DBeaver using the provided credentials.
-4. Run the algorithm.
+   git clone https://github.com/rakh1234/mentor-matching.git
+2. Pull the Docker image from Docker Hub:
+   docker pull razankh/mentor-matching-ml-algorithm
+3. Set up the Docker container:
+   docker run -d -p 5000:5000 razankh/mentor-matching-ml-algorithm
+5. Configure the database connection in DBeaver using the provided credentials.
+6. Run the algorithm.
